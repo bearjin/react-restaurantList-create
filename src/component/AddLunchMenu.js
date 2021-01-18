@@ -4,7 +4,7 @@ class AddLunchMenu extends Component {
     render() {
         return (
             <form className="new_menu" action="/create-list" method="post"
-                onSubmit={function(e){
+                onSubmit={function (e) {
                     e.preventDefault();
                     this.props.onAddMenu(
                         e.target.menuname.value,
@@ -25,7 +25,7 @@ class AddLunchMenu extends Component {
                         ></input>
                     </li>
                     <li>
-                         <label htmlFor="menuCountry">종류 :</label>
+                        <label htmlFor="menuCountry">종류 :</label>
                         <input
                             type="text"
                             name="menucountry"
@@ -34,7 +34,7 @@ class AddLunchMenu extends Component {
                         ></input>
                     </li>
                     <li>
-                         <label htmlFor="mainMenu">대표 메뉴 :</label>
+                        <label htmlFor="mainMenu">대표 메뉴 :</label>
                         <input
                             type="text"
                             name="mainmenu"

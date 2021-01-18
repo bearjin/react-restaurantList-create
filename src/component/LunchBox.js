@@ -5,7 +5,6 @@ import LunchMenuList from './LunchMenuList';
 class LunchBox extends Component {
     constructor(props) {
         super(props);
-        this.maxIdx = 24;
         this.state = {
             data: this.props.data
         }
@@ -17,7 +16,6 @@ class LunchBox extends Component {
                 <div className="inner">
                     <AddLunchMenu
                         onAddMenu={function (_name, _country, _mainmenu) {
-                            this.maxIdx = this.maxIdx + 1;
                             var newData = Array.from(this.state.data);
 
                             newData.push(
@@ -37,7 +35,6 @@ class LunchBox extends Component {
                         data={this.state.data}
                         onDeleteMenu={function (_idx) {
                             if (window.confirm("정말 삭제하시겠습니다?")) {
-                                this.maxIdx = this.maxIdx - 1;
                                 var newData = Array.from(this.state.data);
                                 var i = 0;
 
