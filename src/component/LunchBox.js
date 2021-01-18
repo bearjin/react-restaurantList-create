@@ -5,7 +5,7 @@ import LunchMenuList from './LunchMenuList';
 class LunchBox extends Component {
     constructor(props) {
         super(props);
-        this.maxIdx = 25;
+        this.maxIdx = 24;
         this.state = {
             data: this.props.data
         }
@@ -22,7 +22,6 @@ class LunchBox extends Component {
 
                             newData.push(
                                 {
-                                    idx: this.maxIdx,
                                     menu: _name,
                                     country: _country,
                                     main_menu: _mainmenu
@@ -31,17 +30,19 @@ class LunchBox extends Component {
                             this.setState({
                                 data: newData
                             });
+                            alert("메뉴가 추가 되었습니다.");
                         }.bind(this)}
                     ></AddLunchMenu>
                     <LunchMenuList
                         data={this.state.data}
                         onDeleteMenu={function (_idx) {
                             if (window.confirm("정말 삭제하시겠습니다?")) {
+                                this.maxIdx = this.maxIdx - 1;
                                 var newData = Array.from(this.state.data);
                                 var i = 0;
 
                                 while (i < newData.length) {
-                                    if (newData[i].idx === Number(_idx)) {
+                                    if (i === Number(_idx)) {
                                         newData.splice(i, 1);
                                         break;
                                     }
@@ -50,6 +51,7 @@ class LunchBox extends Component {
                                 this.setState({
                                     data: newData
                                 });
+                                alert("메뉴가 삭제 되었습니다.");
                             }
                         }.bind(this)}
                     ></LunchMenuList>
