@@ -9,7 +9,10 @@ class LunchMenuList extends Component {
             menuList.push(
                 <li key={data[i].idx} className="list">
                     <a href="/" className="name" country={data[i].country} mainmenu={data[i].main_menu}>{data[i].idx}. {data[i].menu}</a>
-                    <button type="button">메뉴 삭제</button>
+                    <button type="button" data-idx={data[i].idx} onClick={function(e){
+                        e.preventDefault();
+                        this.props.onDeleteMenu(e.target.dataset.idx);
+                    }.bind(this)}>메뉴 삭제</button>
                 </li>);
             i = i + 1;
         }
