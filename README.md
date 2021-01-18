@@ -1,71 +1,20 @@
-# Getting Started with Create React App
+# 주변 식당 리스트 만들기
+점심 메뉴를 무엇을 먹을지 고르기 힘들 때를 경험으로 주변 식당 리스트를 만들고 랜덤으로 점심 메뉴를 선택해주는 기능을 만들었습니다.
+새로 생긴 곳 또는 문을 닫는 곳이 생길 경우도 고려해 추가 및 삭제 기능과 함께 식당의 대표 메뉴, 위치를 보여주는 기능도 추가 할 예정 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Restaurant-list](https://bearjin.github.io/react-restaurantList-create/)
 
-## Available Scripts
+### 리스트 만들기
+restaurant-list-data 파일로 식당들의 데이터를 관리하고 LunchMenuList 에서 식당들의 데이터를 가지고 리스트들을 생성해 줍니다.
 
-In the project directory, you can run:
+### 랜덤
+RandomMenu 에서 메뉴 랜덤 선택하기를 클릭 했을 때 메뉴를 랜덤으로 선택해주고 결과를 아래 부분에 텍스트로 보여줍니다.
 
-### `npm start`
+### 식당 추가
+현재 미적용 상태
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 식당 삭제
+현재 미적용 상태
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-restaurantList-create
+### 위치
+현재 위치 지도만 적용 되어 있는 상태
