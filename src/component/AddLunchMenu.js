@@ -6,8 +6,10 @@ class AddLunchMenu extends Component {
             <form className="new_menu" action="/create-list" method="post"
                 onSubmit={function(e){
                     e.preventDefault();
-                    this.props.onSubmit(
-                        e.target.newmenu.value,
+                    this.props.onAddMenu(
+                        e.target.menuname.value,
+                        e.target.menucountry.value,
+                        e.target.mainmenu.value,
                     )
                 }.bind(this)}
             >
@@ -39,6 +41,9 @@ class AddLunchMenu extends Component {
                             id="mainMenu"
                             placeholder="추가 할 식당의 대표 메뉴를 적어주세요."
                         ></input>
+                    </li>
+                    <li>
+                        <input type="submit"></input>
                     </li>
                 </ul>
             </form>
