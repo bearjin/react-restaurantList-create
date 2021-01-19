@@ -1,8 +1,9 @@
 import '../sub.css';
 import React, { Component } from "react";
-import LunchBox from '../component/LunchBox';
 import RandomMenu from '../component/RandomMenu';
 import LunchMap from '../component/LunchMap';
+import AddLunchMenu from '../component/AddLunchMenu';
+import LunchMenuList from '../component/LunchMenuList';
 import RestaurantData from '../restaurant-list-data';
 
 class App extends Component {
@@ -31,7 +32,48 @@ class App extends Component {
 						<LunchMap></LunchMap>
 					</div>
 					<div className="right">
-						<LunchBox data={this.state.data}></LunchBox>
+						<div id="lunchBox" className="box">
+							<div className="inner">
+								<AddLunchMenu
+									onAddMenu={function (_name, _country, _mainmenu) {
+										var newData = Array.from(this.state.data);
+
+										newData.push(
+											{
+												menu: _name,
+												country: _country,
+												main_menu: _mainmenu
+											}
+										);
+										this.setState({
+											data: newData
+										});
+										alert("메뉴가 추가 되었습니다.");
+									}.bind(this)}
+								></AddLunchMenu>
+								<LunchMenuList
+									data={this.state.data}
+									onDeleteMenu={function (_idx) {
+										if (window.confirm("정말 삭제하시겠습니다?")) {
+											var newData = Array.from(this.state.data);
+											var i = 0;
+
+											while (i < newData.length) {
+												if (i === Number(_idx)) {
+													newData.splice(i, 1);
+													break;
+												}
+												i = i + 1;
+											}
+											this.setState({
+												data: newData
+											});
+											alert("메뉴가 삭제 되었습니다.");
+										}
+									}.bind(this)}
+								></LunchMenuList>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
