@@ -29,7 +29,7 @@ class App extends Component {
 							}.bind(this)}
 							randomIdx={this.state.randomIdx}
 						></RandomMenu>
-						<LunchMap></LunchMap>
+						<LunchMap data={this.state.data} randomIdx={this.state.randomIdx}></LunchMap>
 					</div>
 					<div className="right">
 						<div id="lunchBox" className="box">
