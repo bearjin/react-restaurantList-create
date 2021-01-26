@@ -10,6 +10,7 @@ class AddLunchMenu extends Component {
                         e.target.menuname.value,
                         e.target.menucountry.value,
                         e.target.mainmenu.value,
+                        e.target.address.value,
                     )
                 }.bind(this)}
             >
@@ -40,6 +41,15 @@ class AddLunchMenu extends Component {
                             name="mainmenu"
                             id="mainMenu"
                             placeholder="추가 할 식당의 대표 메뉴를 적어주세요."
+                        ></input>
+                    </li>
+                    <li>
+                        <label htmlFor="address">주소 :</label>
+                        <input
+                            type="text"
+                            name="address"
+                            id="address"
+                            placeholder="추가 할 식당의 주소를 적어주세요."
                         ></input>
                     </li>
                     <li>

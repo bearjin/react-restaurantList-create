@@ -1,5 +1,5 @@
 var RestaurantData = [
-    { menu: '개미식당', country: '한식', main_menu: '목요일',  address: '서울특별시 서초구 잠원동 25-22' },
+    { menu: '개미식당', country: '한식', main_menu: '목요일', address: '서울특별시 서초구 잠원동 25-22' },
     { menu: '고집', country: '한식', main_menu: '뚝불고기', address: '잠원동 23-7번지 1층 서초구 서울특별시 KR' },
     { menu: '나주곰탕', country: '한식', main_menu: '곰탕', address: '서울특별시 서초구 잠원동 25-22번지 운정빌딩 1층' },
     { menu: '백암왕순대', country: '한식', main_menu: '순대국', address: '서울특별시 서초구 잠원동 강남대로95길 34' },

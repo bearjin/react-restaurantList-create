@@ -35,14 +35,15 @@ class App extends Component {
 						<div id="lunchBox" className="box">
 							<div className="inner">
 								<AddLunchMenu
-									onAddMenu={function (_name, _country, _mainmenu) {
+									onAddMenu={function (_name, _country, _mainmenu, _address) {
 										var newData = Array.from(this.state.data);
 
 										newData.push(
 											{
 												menu: _name,
 												country: _country,
-												main_menu: _mainmenu
+												main_menu: _mainmenu,
+												address: _address
 											}
 										);
 										this.setState({
@@ -70,6 +71,11 @@ class App extends Component {
 											});
 											alert("메뉴가 삭제 되었습니다.");
 										}
+									}.bind(this)}
+									onChangeIdx={function (_idx) {
+										this.setState({
+											randomIdx: _idx,
+										});
 									}.bind(this)}
 								></LunchMenuList>
 							</div>

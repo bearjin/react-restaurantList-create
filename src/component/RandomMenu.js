@@ -10,14 +10,14 @@ class RandomMenu extends Component {
         return (
             <div id="randomMenu" className="random_menu">
                 <div className="inner">
+                    <p>결과 : <span className="result">{this.props.data[this.props.randomIdx].menu}</span></p>
+                    <p><span className="result_country">{this.props.data[this.props.randomIdx].country}</span></p>
+                    <p>대표메뉴 : <span className="result_main">{this.props.data[this.props.randomIdx].main_menu}</span></p>
                     <button onClick={function (e) {
                         e.preventDefault();
                         var randomIdx = this.getRandomInt(0, this.props.data.length);
                         this.props.onChangeIdx(randomIdx);
                     }.bind(this)}>메뉴 랜덤 선택하기</button>
-                    <p>결과 : <span className="result">{this.props.data[this.props.randomIdx].menu}</span></p>
-                    <p><span className="result_country">{this.props.data[this.props.randomIdx].country}</span></p>
-                    <p>대표메뉴 : <span className="result_main">{this.props.data[this.props.randomIdx].main_menu}</span></p>
                 </div>
             </div>
         );
