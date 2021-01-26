@@ -14,6 +14,9 @@ class LunchMap extends Component {
             });
         }
     }
+    componentDidUpdate() {
+        this.renderMap();
+    }
     renderMap() {
         var _data = this.props.data;
         var _randomIdx = this.props.randomIdx;
@@ -39,7 +42,6 @@ class LunchMap extends Component {
 
         // 주소로 좌표를 검색합니다
         geocoder.addressSearch(_data[_randomIdx].address, function (result, status) {
-
             // 정상적으로 검색이 완료됐으면
             if (status === kakao.maps.services.Status.OK) {
 

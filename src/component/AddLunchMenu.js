@@ -43,7 +43,7 @@ class AddLunchMenu extends Component {
                         ></input>
                     </li>
                     <li>
-                        <input type="submit"></input>
+                        <input type="submit" value="추가하기"></input>
                     </li>
                 </ul>
             </form>
