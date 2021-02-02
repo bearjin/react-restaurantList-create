@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-restaurantList-create/static/css/main.394ec8a3.chunk.css",
-    "main.js": "/react-restaurantList-create/static/js/main.58e3a244.chunk.js",
-    "main.js.map": "/react-restaurantList-create/static/js/main.58e3a244.chunk.js.map",
+    "main.css": "/react-restaurantList-create/static/css/main.d23f6bb8.chunk.css",
+    "main.js": "/react-restaurantList-create/static/js/main.fd5d45d3.chunk.js",
+    "main.js.map": "/react-restaurantList-create/static/js/main.fd5d45d3.chunk.js.map",
     "runtime-main.js": "/react-restaurantList-create/static/js/runtime-main.01528204.js",
     "runtime-main.js.map": "/react-restaurantList-create/static/js/runtime-main.01528204.js.map",
     "static/js/2.f48192f1.chunk.js": "/react-restaurantList-create/static/js/2.f48192f1.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.eccc442e.chunk.js": "/react-restaurantList-create/static/js/3.eccc442e.chunk.js",
     "static/js/3.eccc442e.chunk.js.map": "/react-restaurantList-create/static/js/3.eccc442e.chunk.js.map",
     "index.html": "/react-restaurantList-create/index.html",
-    "static/css/main.394ec8a3.chunk.css.map": "/react-restaurantList-create/static/css/main.394ec8a3.chunk.css.map",
+    "static/css/main.d23f6bb8.chunk.css.map": "/react-restaurantList-create/static/css/main.d23f6bb8.chunk.css.map",
     "static/js/2.f48192f1.chunk.js.LICENSE.txt": "/react-restaurantList-create/static/js/2.f48192f1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.01528204.js",
     "static/js/2.f48192f1.chunk.js",
-    "static/css/main.394ec8a3.chunk.css",
-    "static/js/main.58e3a244.chunk.js"
+    "static/css/main.d23f6bb8.chunk.css",
+    "static/js/main.fd5d45d3.chunk.js"
   ]
 }
