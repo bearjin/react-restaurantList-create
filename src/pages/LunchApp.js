@@ -17,7 +17,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<p className="main_title">Uid 점심 메뉴 리스트</p>
+				<p className="main_title">점심 메뉴 리스트</p>
 				<div className="lunch_wrap">
 					<div className="left">
 						<RandomMenu

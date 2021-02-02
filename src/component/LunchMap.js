@@ -30,8 +30,8 @@ class LunchMap extends Component {
         var map = new kakao.maps.Map(mapContainer, mapOptions);
 
         var icon = new kakao.maps.MarkerImage(
-            'https://bearjin.github.io/react-restaurantList-create/images/uber_marker.png',
-            new kakao.maps.Size(37, 48),
+            'https://bearjin.github.io/react-restaurantList-create/images/location-pin.png',
+            new kakao.maps.Size(48, 48),
             {
                 alt: "UBER UID TEAM",
             }
