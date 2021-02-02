@@ -8,7 +8,6 @@ class AddLunchMenu extends Component {
                     e.preventDefault();
                     this.props.onAddMenu(
                         e.target.menuname.value,
-                        e.target.menucountry.value,
                         e.target.mainmenu.value,
                         e.target.address.value,
                     )
@@ -23,15 +22,6 @@ class AddLunchMenu extends Component {
                             name="menuname"
                             id="menuName"
                             placeholder="추가 할 식당의 이름을 적어주세요."
-                        ></input>
-                    </li>
-                    <li>
-                        <label htmlFor="menuCountry">종류 :</label>
-                        <input
-                            type="text"
-                            name="menucountry"
-                            id="menuCountry"
-                            placeholder="추가 할 식당의 종류를 적어주세요."
                         ></input>
                     </li>
                     <li>
