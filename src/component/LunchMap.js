@@ -3,6 +3,12 @@ import React, { Component } from "react";
 
 class LunchMap extends Component {
     componentDidMount() {
+        this.loadApi();
+    }
+    componentDidUpdate() {
+        this.renderMap();
+    }
+    loadApi() {
         var _script = document.createElement('script');
         _script.async = true;
         _script.src = '//dapi.kakao.com/v2/maps/sdk.js?appkey=20a534107673271022647d90e5904fa9&libraries=services&autoload=false';
@@ -13,9 +19,6 @@ class LunchMap extends Component {
                 this.renderMap();
             });
         }
-    }
-    componentDidUpdate() {
-        this.renderMap();
     }
     renderMap() {
         var _data = this.props.data;
@@ -56,7 +59,7 @@ class LunchMap extends Component {
 
                 // 인포윈도우로 장소에 대한 설명을 표시합니다
                 var infowindow = new kakao.maps.InfoWindow({
-                    content: '<div style="width:150px;text-align:center;padding:6px 0;">' + _data[_randomIdx].menu + '</div>'
+                    content: '<div style="width:150px;text-align:center;padding:6px 0;">' + _data[_randomIdx].name + '</div>'
                 });
                 infowindow.open(map, marker);
 

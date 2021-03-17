@@ -5,10 +5,10 @@ class LunchMenuList extends Component {
         var menuList = this.props.data.map((elm, _idx) => {
             return (
                 <li key={_idx} className="list">
-                    <a href="/" className="name" country={elm.country} mainmenu={elm.main_menu} onClick={function (e) {
+                    <a href="/" className="name" mainmenu={elm.main_menu} onClick={function (e) {
                         e.preventDefault();
                         this.props.onChangeIdx(_idx);
-                    }.bind(this)}>{_idx}. {elm.menu}</a>
+                    }.bind(this)}>{_idx}. {elm.name}</a>
                     <button type="button" onClick={function (e) {
                         e.preventDefault();
                         this.props.onDeleteMenu(_idx);
