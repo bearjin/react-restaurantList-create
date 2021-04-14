@@ -1,7 +1,6 @@
 var RestaurantData = [
     { name: '개미식당', main_menu: '목요일', address: '서울특별시 서초구 잠원동 25-22' },
     { name: '고집', main_menu: '뚝불고기', address: '잠원동 23-7번지 1층 서초구 서울특별시 KR' },
-    { name: '나주곰탕', main_menu: '곰탕', address: '서울특별시 서초구 잠원동 25-22번지 운정빌딩 1층' },
     { name: '백암왕순대', main_menu: '순대국', address: '서울특별시 서초구 잠원동 강남대로95길 34' },
     { name: '전설의 짬뽕', main_menu: '차돌짬뽕', address: '서울특별시 서초구 잠원동 나루터로15길 7-2' },
     { name: '아랑솥뚜껑', main_menu: '김치찌개', address: '서울 서초구 신반포로47길 51-4 동서빌딩 1층' },
