@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-
 html,
 body {
   height: 100%;
@@ -48,7 +47,7 @@ li {
   color: #fff;
   text-align: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box button {
@@ -97,8 +96,8 @@ li {
 
 .menu_list::after {
   display: block;
+  content: "";
   clear: both;
-  content: '';
 }
 
 .menu_list li {
@@ -109,15 +108,14 @@ li {
   font-size: 0;
   text-align: left;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu_list li:nth-child(even) {
   margin-left: 20px;
 }
 
-.menu_list li:nth-child(1),
-.menu_list li:nth-child(2) {
+.menu_list li:nth-child(1), .menu_list li:nth-child(2) {
   margin-top: 0;
 }
 
@@ -210,5 +208,4 @@ li {
   width: 100%;
   height: 100%;
 }
-
 /*# sourceMappingURL=sub.css.map */

@@ -1,4 +1,4 @@
-import '../sub.css';
+import '../styles/sub.css';
 import React, { Component } from "react";
 import RandomMenu from '../component/RandomMenu';
 import LunchMap from '../component/LunchMap';

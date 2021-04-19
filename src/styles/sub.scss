@@ -1,25 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import './common';
+@import './_variables';
 
-$bgColorBlack: #000;
-$bgColorWhite: #fff;
-$bgColorSky: #6b9ecc;
-$textColorBlack: #000;
-$textColorWhite: #fff;
-
-html,
-body {
-    height: 100%;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    ;
-}
-
-li {
-    list-style: none;
+@mixin clearfix {
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .main_title {
@@ -105,9 +91,7 @@ li {
 
 .menu_list {
     &::after {
-        display: block;
-        clear: both;
-        content: '';
+        @include clearfix();
     }
 
     li {
