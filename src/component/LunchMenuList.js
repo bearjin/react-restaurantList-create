@@ -8,7 +8,7 @@ class LunchMenuList extends Component {
                     <a href="/" className="name" mainmenu={elm.main_menu} onClick={function (e) {
                         e.preventDefault();
                         this.props.onChangeIdx(_idx);
-                    }.bind(this)}>{_idx}. {elm.name}</a>
+                    }.bind(this)}>{_idx + 1}. {elm.name}</a>
                     <button type="button" onClick={function (e) {
                         e.preventDefault();
                         this.props.onDeleteMenu(_idx);
